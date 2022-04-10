@@ -1,0 +1,76 @@
+/** @format */
+
+.create-blog-container {
+  width: 100%;
+  min-height: 100vh;
+  background-image: linear-gradient(
+    to right,
+    rgba(212, 212, 212, 0.1),
+    rgba(211, 211, 211, 0.2)
+  );
+}
+
+.create-blog-wrapper {
+  padding-top: 75px;
+  padding-bottom: 40px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.create-blog-wrapper h1 {
+  color: #fd784c;
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+}
+
+.blog-bg-img {
+  min-width: 270px;
+  width: 50%;
+  max-width: 650px;
+  min-height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px;
+  position: relative;
+  overflow: hidden;
+}
+
+.blog-bg-img img {
+  width: 100%;
+  min-width: 300px;
+  min-height: 170px;
+  height: 100%;
+  object-fit: contain;
+}
+
+.blog-bg-img .cancle-img {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.blog-bg-img input {
+  display: none;
+}
+
+.create-input,
+.create-textarea {
+  min-width: 290px;
+  width: 80%;
+  margin-bottom: 40px;
+}
+
+#create-title,
+#create-blog {
+  font-family: "Kaisei Tokumin", serif;
+  font-size: 1.1rem;
+  letter-spacing: 0.1rem;
+}
+
+#create-blog {
+  font-size: 1.05rem;
+  line-height: 1.3rem;
+}

@@ -1,0 +1,68 @@
+/** @format */
+@import url("https://fonts.googleapis.com/css2?family=Kaisei+Tokumin:wght@500&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Kaisei Tokumin", serif;
+  scroll-behavior: smooth;
+}
+
+.Blogs {
+  font-size: 2.5rem;
+  text-align: center;
+  margin-top: 30px;
+  letter-spacing: 0.1rem;
+  color: #5a5a5a;
+  text-decoration: underline;
+  cursor: default;
+  text-transform: capitalize;
+}
+
+@media (max-width: 950px) {
+  .blogs-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .nav-links {
+    display: none;
+  }
+  .logo {
+    font-size: 1.9rem;
+  }
+  .mob-nav {
+    display: flex;
+  }
+
+  .blog-navbar {
+    padding: 0px 15px;
+  }
+}
+
+@media (max-width: 670px) {
+  .blogs-container {
+    grid-template-columns: 1fr;
+  }
+  nav {
+    padding: 0px 30px;
+    justify-content: flex-end;
+  }
+  .logo {
+    display: none;
+  }
+
+  header,
+  header::before {
+    height: 65vh;
+  }
+  header h1 {
+    font-size: 7vw;
+  }
+  header p {
+    font-size: 3.2vw;
+  }
+  .blog-navbar {
+    padding: 0px;
+  }
+} ;
